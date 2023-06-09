@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  font-family: "Hind", sans-serif;
+}
+.container {
+  width: 60%;
+  margin: auto;
+}
+.bg {
+  background-image: url(../img/tulip.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button-num {
+  padding: 20px 50px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+  font-size: 15px;
+  font-weight: 500px;
+  background-size: 200%;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+  border-radius: 50px;
+  cursor: pointer;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+.input-num {
+  width: 300px;
+  padding: 20px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: 0.5s;
+}
+.input-num:hover {
+  border: #f55f8d 1px solid;
+}
+.button {
+  padding: 15px 30px;
+  color: white;
+  background-color: #f55f8d;
+  font-size: 15px;
+  font-weight: 500px;
+  background-size: 200%;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+  border-radius: 50px;
+  cursor: pointer;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.text {
+  padding-top: 20px;
+}
+.text p {
+  font-size: 30px;
+  color: white;
+}
+.text h1 {
+  font-weight: bold;
+  color: white;
+}
+.result {
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}

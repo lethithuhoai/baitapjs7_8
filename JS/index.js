@@ -117,7 +117,7 @@ function kiemTraSNT(n) {
 
 document.getElementById("btnEx8").onclick = function () {
   let ketQua = 0;
-  for (i = 0; i < mang.length; i++) {
+  for (let i = 0; i < mang.length; i++) {
     const checkSNT = kiemTraSNT(mang[i]);
     if (checkSNT) {
       ketQua = mang[i];
@@ -130,15 +130,20 @@ document.getElementById("btnEx8").onclick = function () {
 };
 
 //bai tap 9
-btnEx9.onclick = function () {
-  let dem = 0;
-
-  for (let i = 0; i < mang.length; i++) {
-    if (mang[i] % 1 === 0) {
-      dem++;
+var mang1 = [];
+document.getElementById("addNumber").onclick = function () {
+  var inputSoThuc = document.getElementById("inputSoThuc").value * 1;
+  mang1.push(inputSoThuc);
+  document.getElementById("resultSoThuc").innerHTML = mang1;
+};
+document.getElementById("btnEx9").onclick = function () {
+  let demSoNguyen = 0;
+  for (var i = 0; i < mang1.length; i++) {
+    if (Number.isInteger(mang1[i])) {
+      demSoNguyen++;
     }
   }
-  document.getElementById("result9").innerHTML = dem;
+  document.getElementById("result9").innerHTML = demSoNguyen;
 };
 // bai tap 10: so sánh lượng số âm và dương
 btnEx10.onclick = function () {
